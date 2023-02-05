@@ -1,0 +1,12 @@
+
+  <div class="container" (click)="changeElement()" id="container" aria-disabled="true">
+    <div id="countdown">
+      <svg>
+        <circle r="18" cx="20" cy="20" [ngClass]="spinnerClass">
+
+        </circle>
+      </svg>
+      <span>{{labelTimer}}</span>
+      <img *ngIf="otpSend" src="../../../assets/img/garrapata.png" alt="Imagen de check" class="check">
+    </div>
+  </div>
